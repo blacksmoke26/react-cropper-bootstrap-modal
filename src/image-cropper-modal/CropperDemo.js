@@ -2,13 +2,12 @@
 
 /**
  * @author Junaid Atari <mj.atari@gmail.com>
- * @link http://junaidatari.com Author Website
  * @since 2020-08-14
  */
 
 import React from 'react';
 import { Container, Card } from 'react-bootstrap';
-import ImageCropperModel from './ImageCropperModel';
+import ImageCropperModal from './ImageCropperModal';
 
 // Types
 import type { Node } from 'react';
@@ -38,7 +37,7 @@ function CropperDemo (): Node {
 				</Card.Body>
 			</Card>
 			{file && (
-				<ImageCropperModel file={file}
+				<ImageCropperModal file={file}
 					onConfirm={( file: File ) => {
 						setResizedImage(window.URL.createObjectURL(file));
 						setFile(null);

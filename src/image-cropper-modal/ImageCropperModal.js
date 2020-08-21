@@ -2,19 +2,18 @@
 
 /**
  * @author Junaid Atari <mj.atari@gmail.com>
- * @link http://junaidatari.com Author Website
  * @since 2020-08-14
  */
 
 import React from 'react';
+import * as PropTypes from 'prop-types';
 import ReactCropper from 'react-cropper';
 import { Button, Modal, Row, Col } from 'react-bootstrap';
 import Slider from 'rc-slider';
 
 // Types
 import type { Node } from 'react';
-import * as PropTypes from 'prop-types';
-import { ReactCropperProps } from 'react-cropper';
+import type { ReactCropperProps } from 'react-cropper';
 import type Cropper from 'cropperjs';
 
 // Styles
@@ -22,7 +21,7 @@ import 'cropperjs/dist/cropper.css';
 import 'rc-slider/assets/index.css';
 
 /**
- * ImageCropperModel `props` type
+ * ImageCropperModal `props` type
  * @type {Object}
  */
 type Props = {
@@ -51,9 +50,9 @@ type Props = {
 };
 
 /**
- * ImageCropperModel functional component
+ * ImageCropperModal functional component
  */
-const ImageCropperModel = ( props: Props ): Node => {
+function ImageCropperModal ( props: Props ): Node {
 	const [cropper, setCropper] = React.useState<Cropper>();
 	const [show, setShow] = React.useState<boolean>(false);
 	const [image, setImage] = React.useState<string>(null);
@@ -192,7 +191,7 @@ const ImageCropperModel = ( props: Props ): Node => {
 	);
 };
 
-ImageCropperModel.propTypes = {
+ImageCropperModal.propTypes = {
 	onConfirm: PropTypes.func,
 	onDiscard: PropTypes.func,
 	mime: PropTypes.string,
@@ -207,7 +206,7 @@ ImageCropperModel.propTypes = {
 	croppedCanvas: PropTypes.object,
 }
 
-ImageCropperModel.defaultProps = {
+ImageCropperModal.defaultProps = {
 	i18n: {
 		heading: 'Crop Image',
 		confirm: 'Confirm',
@@ -230,5 +229,5 @@ ImageCropperModel.defaultProps = {
 	onDiscard: () => {},
 }
 
-export default ImageCropperModel;
+export default ImageCropperModal;
  
