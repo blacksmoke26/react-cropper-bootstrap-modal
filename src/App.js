@@ -1,11 +1,14 @@
+// @flow
+
 /**
  * @author Junaid Atari <mj.atari@gmail.com>
- * @link http://junaidatari.com Author Website
- * @since 2020-08-18
+ * @since 2020-08-14
  */
 
 import React from 'react';
-import CropperDemo from './image-cropper-model/CropperDemo';
+
+// Components
+import CropperDemo from './image-cropper-modal/CropperDemo';
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.css';
