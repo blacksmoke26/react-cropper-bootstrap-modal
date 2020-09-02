@@ -1,13 +1,14 @@
 ## React-Cropper with Bootstrap Modal
-Standalone component to resize image with-in a modal.
+Standalone component to Resize image with-in a Bootstrap Modal.
 
 ### Working Demo
-https://codesandbox.io/s/tozjg
+https://codesandbox.io/s/y0070
 
 ### Used in App:
-1. React-Cropper: [https://github.com/react-cropper/react-cropper](https://github.com/react-cropper/react-cropper)
-3. React-Bootstrap: https://react-bootstrap.github.io/
-1. Rc-slider: [https://github.com/schrodinger/rc-slider](https://github.com/schrodinger/rc-slider)
+1. [React-Cropper](https://github.com/react-cropper/react-cropper)
+2. [React-Bootstrap](https://react-bootstrap.github.io/)
+3. [Rc-slider](https://github.com/schrodinger/rc-slider)
+3. [React Viewer](https://infeng.github.io/react-viewer/)
 
 ### Beyond simplicity?
 1. Clone this Repository.
