@@ -11,7 +11,8 @@
     "react-bootstrap": "^1.3.0",
     "react-cropper": "^2.1.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-viewer": "^3.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
