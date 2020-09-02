@@ -6,16 +6,17 @@
  */
 
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 // Components
-import CropperDemo from './image-cropper-modal/CropperDemo';
+import FileInputDemo from './examples/file-input/FileInputDemo';
 
-// Styles
-import 'bootstrap/dist/css/bootstrap.css';
-
+/** App functional component */
 function App() {
 	return (
-		<CropperDemo/>
+		<Container className="mt-4">
+			<FileInputDemo/>
+		</Container>
 	)
 }
 
